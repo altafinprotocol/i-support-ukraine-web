@@ -38,6 +38,45 @@ export const content = `{
         "textLink": "Join our Discord"
       }
     },
+    "sv-SE": {
+      "notSupported": {
+        "meta": {
+          "title": "Jag stöder Ukraine Verified NFT",
+          "description": "Visa Ukraina, Ryssland och världen att du står vid Ukraina med denna Verified Donation NFT",
+          "image": "https://isupportukraine.xyz/isupportukraine-meta.jpg",
+          "video": ""
+        },
+        "content": {
+          "title": "Not Supported",
+          "subTitle": "Networks Currently Supported"
+        }
+      },
+      "mint": {
+        "meta": {
+          "title": "Jag stöder Ukraine Verified NFT",
+          "description": "Visa Ukraina, Ryssland och världen att du står vid Ukraina med denna Verified Donation NFT",
+          "image": "https://isupportukraine.xyz//isupportukraine-meta.jpg",
+          "video": ""
+        },
+        "content": {
+          "cardTitle": "Jag stöder Ukraina",
+          "cardSubTitle": "Show Ukraine, RussVisa Ukraina, Ryssland och världen att du står vid Ukrainaia, and the World you stand by Ukraine",
+          "cardBody": "Om du har donerat direkt till den officiella Ukraina-plånboken kan du skapa denna verifierade donation NFT för “I Support Ukraine“. Ställ sedan in som din Twitter-profilbild för att visa den ryska militären att vi står med Ukraina.",
+          "cardBodySuccess": "Tack för att du stöttar Ukraina. Vänligen ange din “I Support Ukraine“ Verified Donation NFT som din Twitter-profilbild för att hjälpa till att bygga en rörelse.",
+          "cardBodyOpenSea": "Se samling på OpenSea",
+          "ethBalance": "Ethereum-saldo",
+          "buttonMenuMint": "Mynta",
+          "buttonConnectWallet": "Anslut plånbok",
+          "buttonMint": "Mynta NFT",
+          "buttonDonate": "Donera och mynta",
+          "modalSelectWallet": "Välj Plånbok"
+        }
+      },
+      "footer": {
+        "text": "Stolt byggd av AltaPunks at Alta Finance Protocol",
+        "textLink": "Gå med i vår Discord"
+      }
+    },
     "it-IT": {
       "notSupported": {
         "meta": {
