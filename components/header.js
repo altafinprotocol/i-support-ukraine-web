@@ -155,20 +155,32 @@ function Header (props) {
               className='nav-link p-0 cursor-pointer text-size-sm text-uppercase'
               onClick={() => setDropdownLanguage(!dropdownLanguage)}
             >
-              {router.locale === 'en-US' ? LocaleCode.getLanguageCode(router.locale) : LocaleCode.getLanguageNativeName(router.locale)}
+              {LocaleCode.getLanguageNativeName(router.locale)}
               <i className='far fa-chevron-down ml-1' />
             </a>
             <div className={`dropdown-menu shadow-lg border-0 ${dropdownLanguage ? 'show' : ''}`}>
+              <Link href={router.pathname} locale='ru-UA'>
+                <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
+                  <div className='icon-flag shadow-sm mr-3'><Flags.UA /></div>
+                  {LocaleCode.getLanguageNativeName('ru-UA')}
+                </a>
+              </Link>
               <Link href={router.pathname} locale='en-US'>
                 <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
                   <div className='icon-flag shadow-sm mr-3' locale='en-US'><Flags.US /></div>
                   {LocaleCode.getLanguageNativeName('en-US')}
                 </a>
               </Link>
-              <Link href={router.pathname} locale='ru-UA'>
+              <Link href={router.pathname} locale='fr-FR'>
                 <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
-                  <div className='icon-flag shadow-sm mr-3'><Flags.UA /></div>
-                  {LocaleCode.getLanguageNativeName('ru-UA')}
+                  <div className='icon-flag shadow-sm mr-3'><Flags.FR /></div>
+                  {LocaleCode.getLanguageNativeName('fr-FR')}
+                </a>
+              </Link>
+              <Link href={router.pathname} locale='es-ES'>
+                <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
+                  <div className='icon-flag shadow-sm mr-3'><Flags.ES /></div>
+                  {LocaleCode.getLanguageNativeName('es-ES')}
                 </a>
               </Link>
               <Link href={router.pathname} locale='zh-CN'>

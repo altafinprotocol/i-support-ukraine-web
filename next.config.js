@@ -29,7 +29,7 @@ module.exports = {
     return config
   },
   i18n: {
-    locales: ['en-US', 'ru-UA', 'zh-CN'],
+    locales: ['en-US', 'ru-UA', 'zh-CN', 'fr-FR', 'es-ES'],
     defaultLocale: 'en-US'
   }
 }
