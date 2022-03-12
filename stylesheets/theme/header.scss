@@ -1,0 +1,447 @@
+.header {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+  background: none !important;
+
+  @media (max-width: 767px) {
+    @include transition(200ms ease-in-out);
+    transform: translate3d(100%, 0, 0);
+    background: $defi-dark !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    min-height: 100%;
+    min-width: 80vw;
+    flex-direction: column;
+    &:after {
+      content: "";
+      display: block;
+      position: fixed;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      background: #000000;
+      height: 50px;
+      z-index: -1;
+    }
+    &.active {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  #logo-isupportukraine {
+    width: 38px;
+    position: relative;
+    top: -2px;
+    @media (max-width: 767px) {
+      position: relative;
+      top: 15px;
+    }
+    g path,
+    g polygon {
+      @include transition(250ms ease);
+      fill: $defi-dark;
+      @media (max-width: 767px) {
+        fill: $defi-xlight;
+      }
+    }
+
+    &:hover {
+      g path,
+      g polygon {
+        fill: lighten($defi-dark, 15%) !important;
+      }
+    }
+  }
+
+  .navbar {
+    @media (max-width: 767px) {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 90%;
+    }
+    &-toggle {
+      display: none;
+      @media (max-width: 767px) {
+        transform: translate3d(0, 0, 0);
+        display: block;
+        position: fixed;
+        top: 7px;
+        left: -38px;
+        color: $defi-light;
+        font-size: 1.5rem;
+        max-width: 30px;
+        text-align: center;
+      }
+    }
+    &-brand {
+      @media (max-width: 767px) {
+        position: relative;
+      }
+      &-mobile {
+        display: none;
+        @media (max-width: 767px) {
+          position: fixed;
+          top: -11px;
+          left: calc(-100% + 15px);
+          display: block;
+        }
+      }
+    }
+  }
+
+  .nav {
+    padding-top: 2px;
+    @media (max-width: 767px) {
+      display: block;
+      margin-left: 0 !important;
+      width: 60%;
+    }
+    &-account {
+      @media (max-width: 767px) {
+        padding: 0.35rem 1rem;
+        border-radius: 1rem !important;
+      }
+    }
+    &-sub {
+      @media (max-width: 767px) {
+        width: 60%;
+      }
+      .nav-item {
+        padding: 0.15rem 1rem;
+      }
+      .nav-account {
+        @media (max-width: 767px) {
+          padding: 0.35rem 1rem;
+        }
+      }
+    }
+    &-item {
+      @include font-bold;
+      @include transition(250ms ease);
+      @media (max-width: 767px) {
+        padding: 1rem 0;
+        .nav-link {
+          color: $defi-xlight;
+        }
+      }
+      padding: 0.15rem 1rem;
+      border-radius: 6rem;
+      color: $defi-dark;
+      &:hover,
+      &-active {
+        background: rgba($defi-dark, 0.2);
+        @media (max-width: 767px) {
+          background: none;
+        }
+      }
+      a {
+        color: $defi-dark;
+        @include transition(250ms ease);
+        @media (max-width: 767px) {
+          font-size: $text-size-xl;
+        }
+        &:hover {
+          color: $defi-dark !important;
+        }
+      }
+      &-badge {
+        position: relative;
+        .nav-link {
+          float: left;
+          @media (max-width: 767px) {
+            float: none;
+          }
+        }
+        span {
+          @media (max-width: 767px) {
+            background: $primary !important;
+            border: none;
+          }
+          background: none !important;
+          border: 1px solid #ffffff;
+          top: 0px !important;
+          padding-top: 0.21rem !important;
+          padding-bottom: 0.2rem !important;
+        }
+      }
+      &.dropdown {
+        .nav-link {
+          &:hover {
+            @media (max-width: 767px) {
+              color: $defi-xlight !important;
+            }
+          }
+        }
+        .dropdown {
+          &-menu {
+            background: $defi-dark;
+            left: unset;
+            right: 0;
+            top: calc(100% + 10px);
+            @media (max-width: 767px) {
+              background: $defi-xlight;
+              left: 0;
+              right: unset;
+              top: unset;
+              bottom: calc(100% + 10px);
+            }
+          }
+          &-item {
+            font-size: $text-size-sm;
+            @media (max-width: 767px) {
+              font-size: $text-size-md;
+            }
+            padding: 0.25rem 0;
+            color: $defi-xlight;
+            @media (max-width: 767px) {
+              color: $defi-dark;
+            }
+            &-main {
+              font-size: $text-size-xs;
+              @media (max-width: 767px) {
+                font-size: $text-size-md;
+              }
+              i {
+                font-size: $text-size-xxs;
+                color: $defi-light;
+                width: 18px;
+                text-align: center;
+              }
+            }
+            &:hover {
+              color: $defi-xlight !important;
+              background: none;
+            }
+          }
+        }
+      }
+      span {
+        &.badge {
+          @media (max-width: 767px) {
+            float: none;
+            position: absolute;
+            top: 19px !important;
+            left: 38px;
+          }
+          @include font-light;
+          float: left;
+          top: 0px;
+          position: relative;
+          background: $primary;
+          color: #ffffff;
+          padding-top: 0.26rem;
+          text-transform: uppercase;
+        }
+      }
+      &-tooltip {
+        padding: 0 !important;
+        @media (max-width: 767px) {
+          display: none;
+        }
+        position: relative;
+        & > img {
+          cursor: pointer;
+        }
+        &:hover {
+          .nav-tooltip {
+            display: block;
+          }
+        }
+        .nav-tooltip {
+          @include transition(250ms ease);
+          color: $defi-dlight;
+          display: none;
+          background: $defi-dark;
+          border-radius: 0.5rem;
+          @include font-light;
+          padding: 0.75rem;
+          font-size: 0.8rem;
+          line-height: 1rem;
+          position: absolute;
+          top: 40px;
+          left: -100px;
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  .btn-group {
+    $borderColor: $defi-xlight;
+    border-radius: 1.25rem;
+    border: 2px solid $borderColor;
+    overflow: hidden;
+    @media (min-width: 767px) {
+      display: none;
+    }
+    a {
+      .btn {
+        @include font-bold;
+        border-radius: 0;
+        border: 0;
+        font-size: $text-size-xs;
+        color: $borderColor;
+        @media (max-width: 767px) {
+          font-size: $text-size-xl;
+          padding-left: 1.5rem !important;
+          padding-right: 1.5rem !important;
+        }
+        &:hover {
+          background: darken($borderColor, 25%);
+          color: $borderColor;
+        }
+      }
+      &:first-child:not(:only-child) {
+        .btn {
+          border-radius: 1.25rem 0 0 1.25rem;
+          border-right: 2px solid $borderColor;
+        }
+      }
+      &:last-child:not(:only-child) {
+        .btn {
+          border-left: 2px solid $borderColor;
+          border-radius: 0 1.25rem 1.25rem 0;
+        }
+      }
+    }
+  }
+
+  .icon-flag {
+    @include transition(200ms ease);
+    border: 2px solid transparent;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    border-radius: 50%;
+    svg {
+      vertical-align: top;
+    }
+  }
+}
+
+@mixin headerLightMode {
+  @media (max-width: 767px) {
+    background: $primary !important;
+    &:after {
+      background: none !important;
+    }
+  }
+  #logo-isupportukraine {
+    g path,
+    g polygon {
+      fill: #ffffff;
+    }
+    &:hover {
+      g path,
+      g polygon {
+        fill: $gray-200 !important;
+      }
+    }
+  }
+  .navbar {
+    &-toggle {
+      color: #ffffff;
+    }
+  }
+  .nav {
+    &-item {
+      &:hover,
+      &-active {
+        @media (min-width: 767px) {
+          background: hsla(0, 0%, 100%, 0.2);
+        }
+      }
+      a {
+        color: #ffffff !important;
+        &:hover {
+          color: #ffffff !important;
+        }
+      }
+      &.dropdown {
+        .dropdown {
+          &-menu {
+            background: #ffffff;
+            @media (max-width: 767px) {
+              background: #ffffff;
+            }
+          }
+
+          &-menu {
+            a {
+              color: #000000 !important;
+              &:hover {
+                color: $primary !important;
+              }
+            }
+          }
+          &-item {
+            color: #000000;
+            &-main {
+              i {
+                color: #000000;
+              }
+            }
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+      &-tooltip {
+        .nav-tooltip {
+          color: #000000;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+  .btn-group {
+    $borderColor: #ffffff;
+    border-color: $borderColor;
+    a {
+      .btn {
+        color: $borderColor;
+        &:hover {
+          background: darken($borderColor, 25%);
+          color: $borderColor;
+        }
+        &:first-child:not(:only-child) {
+          .btn {
+            border-color: $borderColor;
+          }
+        }
+        &:last-child:not(:only-child) {
+          .btn {
+            border-color: $borderColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header {
+  &-force {
+    &-dark-mode {
+    }
+    &-light-mode {
+      @include headerLightMode;
+    }
+  }
+}
+
+.light-mode {
+  .header {
+    @include headerLightMode;
+  }
+}

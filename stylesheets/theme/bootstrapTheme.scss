@@ -1,0 +1,22 @@
+$theme-colors: (
+  "primary": rgba(0, 87, 183, 1),
+  "danger": #d64e38,
+  "success": #24e38f,
+  "warning": #e8d01a,
+);
+
+$black: #000000;
+$primary: rgba(0, 87, 183, 1); // #00d4ff // #2dc1d6
+$danger: #d64e38;
+$success: #24e38f;
+$warning: #e8d01a;
+$teal: #00d4ff;
+
+// $defi-dark: #030d0f;
+// $defi-xlight: lighten(#0f5b37, 20%);
+// $defi-light: lighten(#0f5b37, 1%);
+
+$defi-dark: darken($primary, 50%);
+$defi-dlight: lighten($defi-dark, 30%);
+$defi-light: darken($primary, 10%);
+$defi-xlight: $primary;

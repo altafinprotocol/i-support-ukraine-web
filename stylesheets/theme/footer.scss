@@ -1,0 +1,31 @@
+footer {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 0;
+
+  @media (max-width: 767px) {
+    position: absolute;
+    background: none;
+  }
+  a {
+    text-decoration: underline;
+  }
+  a,
+  p {
+    @include transition(250ms ease);
+    font-size: 0.9rem;
+    margin: 0;
+    color: $primary;
+  }
+}
+
+.light-mode {
+  footer {
+    a,
+    p {
+      color: $primary;
+    }
+  }
+}

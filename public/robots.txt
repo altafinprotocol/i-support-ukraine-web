@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://app.altafin.co
+
+# Sitemaps
+Sitemap: https://app.altafin.co/sitemap.xml
+Sitemap: https://app.altafin.co/sitemap-server.xml

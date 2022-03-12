@@ -1,0 +1,1030 @@
+$borderRadiusGlobal: 0.5rem !important;
+$text-size-xxl: 1.5rem !important;
+$text-size-xl: 1.2rem !important;
+$text-size-lg: 1.1rem !important;
+$text-size-md: 1rem !important;
+$text-size-sm: 0.9rem !important;
+$text-size-xs: 0.8rem !important;
+$text-size-xxs: 0.7rem !important;
+
+$btn-outline-light-hover: rgba(#ffffff, 0.25);
+
+// @media (prefers-color-scheme: light)
+// @media (prefers-color-scheme: dark)
+
+body,
+#__next,
+.home {
+  width: 100vw;
+}
+
+body {
+  @include transition(150ms ease-in-out);
+  color: $defi-xlight;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  &.modal-open {
+    header,
+    footer,
+    .global-wrapper > div {
+      transform: translate3d(0, 0, 0);
+      @include transition(0ms ease);
+      filter: blur(0.65rem);
+    }
+  }
+}
+
+body {
+  &.light-mode {
+    background: $primary;
+    color: #000000;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include font-regular;
+  padding-top: 2rem;
+}
+
+a {
+  @include transition(250ms ease);
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+b,
+strong {
+  @include font-bold;
+  font-weight: 400 !important;
+}
+
+ol,
+ul {
+  padding-left: 1rem;
+  li {
+    @include font-regular;
+  }
+}
+
+.font-weight {
+  &-light {
+    @include font-light;
+  }
+  &-regular {
+    @include font-regular;
+  }
+  &-bold {
+    @include font-bold;
+    font-weight: 400 !important;
+  }
+}
+
+.bg {
+  &-defi-dark {
+    background: $defi-dark;
+  }
+  &-defi-light {
+    background: $defi-light;
+  }
+  &-white {
+    background: #ffffff;
+  }
+  &-black {
+    background: #000000;
+  }
+  &-gray-100 {
+    background: $gray-100;
+  }
+  &-gray-200 {
+    background: $gray-200;
+  }
+  &-gray-300 {
+    background: $gray-300;
+  }
+  &-gray-400 {
+    background: $gray-400;
+  }
+  &-gray-500 {
+    background: $gray-500;
+  }
+  &-gray-600 {
+    background: $gray-600;
+  }
+  &-gray-700 {
+    background: $gray-700;
+  }
+  &-gray-800 {
+    background: $gray-800;
+  }
+  &-gray-900 {
+    background: $gray-900;
+  }
+  &-gradient {
+    // @include globalGradient(171deg);
+    @include globalGradient(351deg);
+  }
+  &-image {
+    background-color: black;
+    position: relative;
+    &:after {
+      background: rgba(0, 0, 0, 0.65);
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    & > div,
+    & > a {
+      z-index: 2;
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .bg {
+    &-gradient {
+      @include globalGradientLight(351deg);
+    }
+  }
+}
+
+.light-mode {
+  .bg {
+    &-gradient {
+      @include globalGradientLight(351deg);
+    }
+  }
+}
+
+.py {
+  &-6 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+.text {
+  &-size-xxl {
+    font-size: $text-size-xxl;
+  }
+  &-size-xl {
+    font-size: $text-size-xl;
+  }
+  &-size-lg {
+    font-size: $text-size-lg;
+  }
+  &-size-md {
+    font-size: $text-size-md;
+  }
+  &-size-sm {
+    font-size: $text-size-sm;
+  }
+  &-size-xs {
+    font-size: $text-size-xs;
+  }
+  &-size-xxs {
+    font-size: $text-size-xxs;
+  }
+  &-color {
+    &-defi-xlight {
+      color: $defi-xlight;
+    }
+    &-defi-light {
+      color: $defi-light;
+    }
+    &-defi-dark {
+      color: $defi-dark;
+    }
+    &-white {
+      color: #ffffff;
+    }
+    &-black,
+    &-default {
+      color: #000000;
+    }
+    &-primary {
+      color: $primary;
+    }
+    &-success {
+      color: $success;
+    }
+    &-danger {
+      color: $danger;
+    }
+    &-warning {
+      color: $warning;
+    }
+    &-gray-900 {
+      color: $gray-900;
+    }
+    &-gray-800 {
+      color: $gray-800;
+    }
+    &-gray-700 {
+      color: $gray-700;
+    }
+    &-gray-600 {
+      color: $gray-600;
+    }
+    &-gray-500 {
+      color: $gray-500;
+    }
+    &-gray-400 {
+      color: $gray-400;
+    }
+    &-gray-300 {
+      color: $gray-300;
+    }
+    &-gray-200 {
+      color: $gray-200;
+    }
+    &-gray-100 {
+      color: $gray-100;
+    }
+  }
+}
+
+.mw {
+  &-10 {
+    min-width: 10vw !important;
+  }
+  &-20 {
+    min-width: 20vw !important;
+  }
+  &-30 {
+    min-width: 30vw !important;
+  }
+  &-40 {
+    min-width: 40vw !important;
+  }
+  &-50 {
+    min-width: 50vw !important;
+  }
+  &-60 {
+    min-width: 60vw !important;
+  }
+  &-70 {
+    min-width: 70vw !important;
+  }
+  &-80 {
+    min-width: 80vw !important;
+  }
+  &-90 {
+    min-width: 90vw !important;
+  }
+  &-100 {
+    min-width: 100vw !important;
+  }
+}
+
+.w {
+  &-auto {
+    width: auto;
+  }
+  &-50 {
+    width: 50vw;
+  }
+  &-60 {
+    width: 60vw;
+  }
+  &-70 {
+    width: 70vw;
+  }
+  &-80 {
+    width: 80vw;
+  }
+  &-90 {
+    width: 90vw;
+  }
+  &-100 {
+    width: 100vw;
+  }
+}
+
+.mh {
+  &-10 {
+    min-height: 10vh !important;
+  }
+  &-20 {
+    min-height: 20vh !important;
+  }
+  &-30 {
+    min-height: 30vh !important;
+  }
+  &-40 {
+    min-height: 40vh !important;
+  }
+  &-50 {
+    min-height: 50vh !important;
+  }
+  &-60 {
+    min-height: 60vh !important;
+  }
+  &-70 {
+    min-height: 70vh !important;
+  }
+  &-80 {
+    min-height: 80vh !important;
+  }
+  &-90 {
+    min-height: 90vh !important;
+  }
+  &-100 {
+    min-height: 100vh !important;
+  }
+}
+
+.h {
+  &-auto {
+    height: auto;
+  }
+  &-50 {
+    height: 50vh;
+  }
+  &-60 {
+    height: 60vh;
+  }
+  &-70 {
+    height: 70vh;
+  }
+  &-80 {
+    height: 80vh;
+  }
+  &-90 {
+    height: 90vh;
+  }
+  &-100 {
+    height: 100vh;
+  }
+}
+
+.btn {
+  @include transition(250ms ease);
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  &-pill {
+    border-radius: 1.25rem;
+    padding: 0.25rem 1.25rem;
+  }
+  &-outline {
+    &-defi-dark {
+      border-color: $defi-dark;
+      color: $defi-dark;
+    }
+    &-primary {
+      @include font-bold;
+      background: none;
+      border-color: $defi-xlight;
+      color: $defi-xlight;
+      &:hover {
+        background: none;
+        border-color: $defi-light;
+        color: $defi-light;
+      }
+    }
+    &-white {
+      border-color: #ffffff;
+      color: #ffffff;
+      &:hover {
+        background: #ffffff;
+        color: #000000;
+      }
+    }
+  }
+  &-animate {
+    transform: translate3d(0, 0, 0);
+    &:hover {
+      transform: translate3d(0, -1px, 0);
+    }
+  }
+}
+
+.light-mode {
+  .btn {
+    &-outline {
+      &-primary {
+        border-color: $primary;
+        background: $primary;
+        color: #ffffff;
+        &:not(:disabled):not(.disabled).active {
+          color: #ffffff;
+        }
+        &:hover {
+          border-color: darken($primary, 5%);
+          background: darken($primary, 5%);
+        }
+      }
+    }
+  }
+}
+
+.cursor {
+  &-pointer {
+    cursor: pointer;
+  }
+}
+
+.global {
+  &-wrapper {
+    @include globalGradient(351deg);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    padding: 7rem 5rem;
+    max-width: 1800px;
+    @media (max-width: 767px) {
+      padding: 2.5rem 1.5rem;
+    }
+    @media (max-width: 561px) {
+      padding: 2rem 1rem;
+    }
+  }
+}
+
+.light-mode {
+  .global-wrapper {
+    @include globalGradientLight(351deg);
+  }
+}
+
+.modal {
+  &-content {
+    background: $defi-dark;
+    border-radius: 0.75rem;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+      display: none;
+      content: "";
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      background: red;
+      z-index: 0;
+    }
+  }
+  &-header {
+    border: 0;
+    background: lighten($defi-dark, 15%);
+  }
+  &-title {
+    padding: 0;
+    color: $defi-xlight;
+    width: 100%;
+    .btn {
+      @include transition(250ms ease);
+      @include font-bold;
+      font-size: 0.75rem;
+      background: none;
+      border: 1px solid $defi-xlight;
+      margin: 0;
+      color: $defi-xlight;
+      &:hover {
+        color: $defi-dlight;
+        background: $defi-xlight;
+        border-color: $defi-xlight;
+      }
+    }
+  }
+  &-body {
+    .list-group {
+      width: 100%;
+      margin: 0;
+      &-item {
+        @include font-regular;
+        background: none;
+        border: 1px solid lighten($defi-dark, 15%);
+        border-radius: 0.75rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: $defi-xlight;
+        padding: 1rem 0.75rem;
+        &-button {
+          @include transition(250ms ease);
+          cursor: pointer;
+          &:hover {
+            background: lighten($defi-dark, 15%);
+          }
+        }
+        .img {
+          &-fluid {
+            &-icon {
+              width: 32px;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+    .loader {
+      position: relative;
+      right: calc(50% + 7px);
+    }
+  }
+  &-backdrop {
+    background: $defi-light;
+  }
+}
+
+.light-mode {
+  .modal {
+    &-content {
+      background: #ffffff;
+    }
+    &-header {
+      background: $gray-200;
+    }
+    &-title {
+      color: #000000;
+      .btn {
+        border-color: #000000;
+        color: #000000;
+        &:hover {
+          color: $white;
+          border-color: darken($primary, 5%);
+          background: darken($primary, 5%);
+        }
+      }
+    }
+    &-body {
+      .list-group {
+        &-item {
+          background: $gray-200;
+          color: #000000;
+          &-button {
+            &:hover {
+              background: $primary;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.card {
+  background: $defi-dark;
+  border-radius: 0.5rem;
+  border: none;
+  overflow: hidden;
+  .btn-group {
+    $btnGroupColor: $defi-dlight;
+    & > .btn:not(:last-child):not(.dropdown-toggle),
+    & > .btn-group:not(:last-child) > .btn {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    & > .btn:not(:first-child):not(.dropdown-toggle),
+    & > .btn-group:not(:first-child) > .btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .btn {
+      @include font-regular;
+      color: $btnGroupColor;
+      &:focus {
+        box-shadow: none !important;
+      }
+      @include transition(250ms ease);
+      border-color: $btnGroupColor;
+      background: none;
+      // border-radius: 8rem;
+      font-size: 0.9rem;
+      &:hover {
+        color: $btnGroupColor;
+      }
+      &.active {
+        color: $defi-dark;
+        background: $btnGroupColor;
+        border-color: $btnGroupColor;
+      }
+    }
+  }
+  &-header {
+    background: none;
+    border-bottom: 1px solid;
+    border-color: lighten($defi-dark, 15%);
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    .btn {
+      @include font-bold;
+    }
+  }
+  &-body {
+    &-table {
+      padding: 0;
+      font-size: $text-size-xs;
+      &-header {
+        @include font-bold;
+        background: lighten($defi-dark, 5%);
+        margin: 0;
+        padding: 0.5rem 0;
+      }
+      &-row {
+        margin: 0.5rem;
+        background: lighten($defi-dark, 5%);
+        border-radius: 0.5rem;
+        padding: 0.5rem 0;
+        a {
+          color: $defi-xlight;
+          &:hover {
+            color: $defi-xlight;
+          }
+        }
+        .btn {
+          &-xs {
+            font-size: $text-size-xs;
+          }
+          &-outline {
+            &-primary {
+              background: none;
+              border: 1px solid $defi-xlight;
+              color: $defi-xlight;
+              &:hover {
+                background: $defi-light;
+                border-color: $defi-light;
+                color: $defi-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-stat {
+    border: none;
+    .card-body {
+      // @include globalGradient(351deg);
+      min-height: 130px;
+      color: $defi-xlight;
+      overflow: hidden;
+      span {
+        line-height: 1;
+        &:first-child {
+          @include font-bold;
+          font-size: 2.6rem;
+        }
+        &:last-child {
+          @include font-regular;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+.light-mode {
+  .card {
+    background: #ffffff;
+    .btn-group {
+      $btnGroupColor: $primary;
+      .btn {
+        color: $btnGroupColor;
+        border-color: $btnGroupColor;
+        &:hover {
+          color: $btnGroupColor;
+        }
+        &.active {
+          color: #ffffff;
+          background: $btnGroupColor;
+          border-color: $btnGroupColor;
+        }
+      }
+    }
+    &-header {
+      border-color: $gray-300;
+      .btn {
+        &-primary {
+          color: #ffffff;
+        }
+      }
+    }
+    &-body {
+      &-table {
+        &-header {
+          background: $gray-100;
+          color: $gray-700;
+        }
+        &-row {
+          background: $gray-100;
+          a {
+            color: #000000;
+            &:hover {
+              color: #000000;
+            }
+          }
+          .btn {
+            &-outline {
+              &-primary {
+                border-color: $primary;
+                color: $primary;
+                &:hover {
+                  background: darken($primary, 5%);
+                  border-color: darken($primary, 5%);
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &-stat {
+      .card-body {
+        color: #000000;
+      }
+    }
+  }
+}
+
+.x {
+  &-card {
+    &-none {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      span {
+        color: $defi-xlight;
+      }
+    }
+  }
+}
+
+.light-mode {
+  .x {
+    &-card {
+      &-none {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.badge {
+  &-primary {
+    background: $primary;
+    color: $defi-dark;
+  }
+  &-dark {
+    background: $defi-xlight;
+    color: $defi-dark;
+  }
+  &-outline {
+    &-secondary {
+      background: none;
+      border: 1px solid $defi-xlight;
+      color: $defi-xlight;
+    }
+    &-dark {
+      background: none;
+      border: 1px solid $defi-xlight;
+      color: $defi-xlight;
+    }
+    &-primary {
+      background: none;
+      border: 1px solid $defi-xlight;
+      color: $defi-xlight;
+    }
+    &-danger {
+      background: none;
+      border: 1px solid $danger;
+      color: $danger;
+    }
+  }
+}
+
+.light-mode {
+  .badge {
+    &-primary {
+      background: $primary;
+      color: #ffffff;
+    }
+    &-dark {
+      background: #000000;
+      color: #ffffff;
+    }
+    &-outline {
+      &-secondary {
+        background: none;
+        border: 1px solid $gray-500;
+        color: $gray-500;
+      }
+      &-dark {
+        background: none;
+        border: 1px solid #000000;
+        color: #000000;
+      }
+      &-primary {
+        background: none;
+        border: 1px solid $primary;
+        color: $primary;
+      }
+      &-danger {
+        background: none;
+        border: 1px solid $danger;
+        color: $danger;
+      }
+    }
+  }
+}
+
+.list-group {
+  background: none;
+  &-item {
+    background: none;
+    color: $defi-xlight;
+    border-color: lighten($defi-dark, 15%);
+    p {
+      color: $defi-xlight;
+    }
+    .img {
+      &-icon {
+        $s: 20px;
+        width: $s;
+        height: $s;
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+}
+
+.light-mode {
+  .list-group {
+    &-item {
+      color: #000000;
+      border-color: $gray-200;
+      p {
+        color: #000000;
+      }
+    }
+  }
+}
+
+.progress {
+  background: lighten($defi-dark, 15%);
+  &-wrapper {
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+  &-bar {
+    background: $defi-light !important;
+  }
+}
+
+.light-mode {
+  .progress {
+    background: $gray-200;
+    &-bar {
+      .bg {
+        &-danger {
+          background: $danger;
+        }
+        &-success {
+          background: $primary;
+        }
+        &-warning {
+          background: $teal !important;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  &-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    &:after {
+      content: "";
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.75);
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    video {
+      position: absolute;
+      min-height: 100%;
+      min-width: 100%;
+      top: 50%;
+      left: 50%;
+      height: auto !important;
+      width: auto !important;
+      z-index: -1;
+      -webkit-transform: translate(-50%) translateY(-50%);
+      -ms-transform: translateX(0) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translate(-50%, -50%);
+      background-size: cover;
+    }
+  }
+  &-sub-heading {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      @include font-regular;
+      display: block;
+      // max-width: 90%;
+    }
+    img {
+      margin-right: 0.25rem;
+      margin-bottom: 0.25rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  img {
+    border-radius: 1rem;
+    &[src$="_b0.svg"] {
+      border-radius: 0rem;
+      margin: 2rem 0;
+      max-width: 75%;
+    }
+  }
+}
+
+img {
+  &.img {
+    &-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.supported {
+  &-network {
+    @include font-regular;
+    font-size: $text-size-sm;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .img {
+      &-network {
+        width: 64px;
+        height: 64px;
+        margin: 0.75rem;
+      }
+    }
+  }
+}
+
+.dev {
+  border: 2px solid cyan;
+}

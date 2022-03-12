@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Sequel Sans Display";
+  src: url("/fonts/sequel-sans/display-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sequel Sans Normal";
+  src: url("/fonts/sequel-sans/normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sequel Sans Super Display";
+  src: url("/fonts/sequel-sans/super-display.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sequel Sans Headline";
+  src: url("/fonts/sequel-sans/headline-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sequel Sans Semi Bold";
+  src: url("/fonts/sequel-sans/semi-bold.woff2") format("woff2");
+}
+
+@mixin font-xtra-light {
+  font-family: "Sequel Sans Normal", Helvetica, sans-serif;
+  font-weight: 200 !important;
+}
+@mixin font-light {
+  font-family: "Sequel Sans Display", Helvetica, sans-serif;
+  font-weight: 200 !important;
+}
+@mixin font-regular {
+  font-family: "Sequel Sans Display", Helvetica, sans-serif;
+  font-weight: 400 !important;
+}
+@mixin font-bold {
+  font-family: "Sequel Sans Super Display", Helvetica, sans-serif;
+  font-weight: 700 !important;
+}
+@mixin font-black {
+  font-family: "Sequel Sans Super Display", Helvetica, sans-serif;
+  font-weight: 900 !important;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin globalGradientLight($deg) {
+  // default 351deg
+  background: rgb(36, 227, 143);
+  background: linear-gradient(
+    $deg,
+    rgba(255, 215, 0, 1) 0%,
+    rgba(0, 87, 183, 1) 100%
+  );
+}
+
+@mixin globalGradient($deg) {
+  // default 351deg
+  background: rgb(36, 227, 143);
+  background: linear-gradient(
+    351deg,
+    rgba(3, 17, 33, 1) 0%,
+    rgba(5, 27, 83, 1) 23%,
+    rgba(0, 47, 123, 1) 60%,
+    rgba(0, 87, 183, 1) 100%
+  );
+}
+
+@mixin globalSubGradient($deg) {
+  // default 351deg
+  background: rgb(36, 227, 143);
+  background: linear-gradient(
+    $deg,
+    rgba(255, 215, 0, 1) 0%,
+    rgba(0, 87, 183, 1) 100%
+  );
+}
+
+@mixin globalShadow {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+@import "./theme/bootstrapTheme";
+@import "./bootstrap/bootstrap";
+@import "./theme/global";
+
+@import "./font-awesome/fontawesome";
+
+@import "./theme/header.scss";
+@import "./theme/footer.scss";
+@import "./theme/forms.scss";
+@import "./theme/loader.scss";
+@import "./theme/sub.scss";

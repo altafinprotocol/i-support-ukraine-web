@@ -1,0 +1,28 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": [
+      "standard",
+      "standard-react"
+  ],
+  "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+  },
+  "rules": {
+      "no-console": 0,
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/prop-types": 0,
+      "import/extensions": 0,
+      "semi": [2, "never"],
+      "no-tabs": [2, {"allowIndentationTabs": true}]
+  },
+  "plugins": [
+    "babel",
+    "flow-vars"
+  ],
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true
+  }
+}

@@ -1,0 +1,276 @@
+.sub {
+  &-heading {
+    @media (max-width: 767px) {
+      margin-left: 0px;
+    }
+    h1 {
+      @include font-bold;
+      font-size: 36px;
+      line-height: 1.1;
+      color: #000000;
+      padding: 0px 0 45px 0;
+      @media (min-width: 768px) {
+        display: block;
+        width: 75%;
+      }
+    }
+
+    h3 {
+      @include font-bold;
+      font-size: 24px;
+      color: $teal;
+    }
+  }
+  &-empty {
+    @include font-bold;
+    font-size: 28px;
+    background: #e8e8e8;
+    padding: 45px;
+    border-radius: 10px;
+    color: #666666;
+    @media (max-width: 767px) {
+      max-width: calc(100% - 60px);
+      margin-left: 30px;
+    }
+  }
+  &-list {
+    @include transition(250ms ease);
+    padding: 30px 0;
+    border-bottom: 1px solid #e8e8e8;
+
+    @media (max-width: 767px) {
+      max-width: calc(100% - 30px);
+      margin-left: 15px;
+    }
+
+    &:hover {
+      p {
+        color: $teal !important;
+      }
+      i {
+        color: $teal !important;
+      }
+    }
+
+    p {
+      @include transition(250ms ease);
+      @include font-bold;
+      font-size: 18px;
+      color: #000000;
+      text-decoration: none !important;
+      margin: 0;
+      span {
+        color: #666666;
+        margin-left: 10px;
+      }
+    }
+
+    i {
+      @include transition(250ms ease);
+      color: #e8e8e8;
+      font-size: 20px;
+      text-decoration: none !important;
+    }
+  }
+  &-left {
+    background: #e8e8e8;
+    border-radius: 10px;
+    padding: 15px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+      margin-left: 15px;
+      max-width: calc(100% - 30px);
+    }
+
+    p {
+      @include font-regular;
+      strong {
+        @include font-bold;
+      }
+    }
+  }
+  &-description {
+    @media (max-width: 562px) {
+      padding: 0px;
+      margin: 0px;
+    }
+    padding: 45px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    p,
+    ul,
+    li {
+      @include font-regular;
+      strong {
+        @include font-bold;
+      }
+    }
+    &-ticker {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        line-height: 1.1;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          @include transition(250ms ease);
+          padding: 0.5rem;
+          border-radius: 0.5rem;
+          margin-bottom: 0.25rem;
+          cursor: pointer;
+          &:hover {
+            background: lighten($defi-dark, 15%);
+          }
+          p {
+            line-height: 1.2;
+            span {
+              color: $defi-dlight;
+            }
+          }
+          .img {
+            $s: 36px;
+            &-ticker {
+              border: 2px solid lighten($defi-dark, 10%);
+              max-width: $s;
+              border-radius: 50%;
+              margin-right: 0.5rem;
+              &-wrapper {
+                position: relative;
+                &:after {
+                  $h: 15px;
+                  content: "";
+                  display: none;
+                  width: $h;
+                  height: $h;
+                  position: absolute;
+                  top: -1px;
+                  left: -1px;
+                  border-radius: $h;
+                  // background: $gray-900;
+                  z-index: 1;
+                  display: block;
+                  background-size: contain;
+                }
+                &-ethereum {
+                  &:after {
+                    background-image: url(https://zapper.fi/images/networks/ethereum-icon.png);
+                  }
+                }
+                &-solana {
+                  &:after {
+                    background-image: url(https://assets.coingecko.com/coins/images/4128/small/solana.png?1640133422);
+                  }
+                }
+                &-polygon {
+                  &:after {
+                    background-image: url(https://zapper.fi/images/networks/polygon-icon.png);
+                  }
+                }
+                &-arbitrum {
+                  &:after {
+                    background-image: url(https://zapper.fi/images/networks/arbitrum-icon.png);
+                  }
+                }
+                &-bsc {
+                  &:after {
+                    background-image: url(https://zapper.fi/images/networks/binance-smart-chain-icon.png);
+                  }
+                }
+                &-optimism {
+                  &:after {
+                    background-image: url(https://zapper.fi/images/networks/optimism-icon.png);
+                  }
+                }
+                &-avalanche {
+                  &:after {
+                    background-image: url(https://zapper.fi/images/networks/avalanche-icon.png);
+                  }
+                }
+              }
+            }
+            &-double {
+              $w: 70px;
+              width: $w;
+              max-width: $w;
+              min-width: $w;
+              height: $s;
+              img {
+                float: left;
+                &:last-child {
+                  margin-left: -$s / 2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-updates {
+    margin-top: -3rem !important;
+  }
+  &-card {
+    @include transition(250ms ease-in-out);
+    transform: scale3d(1, 1, 1);
+    background: #ffffff;
+    border-radius: 1rem;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    @media (min-width: 576px) {
+      min-height: 335px;
+    }
+    @media (min-width: 768px) {
+      min-height: 350px;
+    }
+    @media (min-width: 992px) {
+      min-height: 300px;
+    }
+    h5 {
+      @include transition(150ms ease);
+    }
+    &:hover {
+      transform: scale3d(1.04, 1.04, 1.04);
+      h5 {
+        color: $primary;
+      }
+    }
+    .card-footer {
+      border: 0;
+      background: none;
+    }
+  }
+}
+
+.light-mode {
+  .sub {
+    &-description {
+      &-ticker {
+        ul {
+          li {
+            p {
+              span {
+                color: $gray-700;
+              }
+            }
+            &:hover {
+              background: $gray-200;
+            }
+            .img {
+              &-ticker {
+                border-color: $gray-200;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
