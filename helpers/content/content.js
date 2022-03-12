@@ -38,7 +38,46 @@ export const content = `{
         "textLink": "Join our Discord"
       }
     },
-    "ca-ES": {
+    "de-DE": {
+      "notSupported": {
+        "meta": {
+          "title": "Ich unterstütze die von der Ukraine verifizierte NFT",
+          "description": "Zeigen Sie der Ukraine, Russland und der Welt, dass Sie zur Ukraine stehen, mit dieser verifizierten Spende NFT",
+          "image": "https://isupportukraine.xyz/isupportukraine-meta.jpg",
+          "video": ""
+        },
+        "content": {
+          "title": "Nicht unterstützt",
+          "subTitle": "Derzeit unterstützte Netzwerke"
+        }
+      },
+      "mint": {
+        "meta": {
+          "title": "Ich unterstütze die von der Ukraine verifizierte NFT",
+          "description": "Zeigen Sie der Ukraine, Russland und der Welt, dass Sie zur Ukraine stehen, mit dieser verifizierten Spende NFT",
+          "image": "https://isupportukraine.xyz//isupportukraine-meta.jpg",
+          "video": ""
+        },
+        "content": {
+          "cardTitle": "Ich unterstütze die Ukraine",
+          "cardSubTitle": "Zeigen Sie der Ukraine, Russland und der Welt, dass Sie zur Ukraine stehen",
+          "cardBody": "Wenn Sie direkt an die offizielle ukrainische Geldbörse gespendet haben, können Sie diese „I Support Ukraine“ Verified Donation NFT prägen. Stellen Sie danach bitte Ihr Twitter-Profilbild ein, um dem russischen Militär zu zeigen, dass wir zur Ukraine stehen.",
+          "cardBodySuccess": "Danke, dass Sie die Ukraine unterstützen. Bitte stellen Sie Ihre „I Support Ukraine“ Verified Donation NFT als Ihr Twitter-Profilbild ein, um beim Aufbau einer Bewegung zu helfen.",
+          "cardBodyOpenSea": "Sammlung auf OpenSea ansehen",
+          "ethBalance": "Ethereum-Guthaben",
+          "buttonMenuMint": "Minze",
+          "buttonConnectWallet": "Brieftasche verbinden",
+          "buttonMint": "Neuwertige NFT",
+          "buttonDonate": "Spenden & Minze",
+          "modalSelectWallet": "Wählen Sie Brieftasche aus"
+        }
+      },
+      "footer": {
+        "text": "Stolz gebaut von den AltaPunks bei Alta Finance Protocol",
+        "textLink": "Tritt unserem Discord bei"
+      }
+    },
+    "es-ES": {
       "notSupported": {
         "meta": {
           "title": "Apoyo a Ucrania Verificado NFT",
@@ -194,4 +233,5 @@ export const content = `{
         "textLink": "Присоединяйтесь к нашему дискорду"
       }
     }
-  }`
+  }
+  `

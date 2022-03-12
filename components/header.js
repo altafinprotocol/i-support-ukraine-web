@@ -152,7 +152,7 @@ function Header (props) {
           </li>}
           <li className='nav-item dropdown mt-2 mt-md-0'>
             <a
-              className='nav-link p-0 cursor-pointer text-size-sm text-uppercase'
+              className='nav-link p-0 cursor-pointer text-size-sm'
               onClick={() => setDropdownLanguage(!dropdownLanguage)}
             >
               {LocaleCode.getLanguageNativeName(router.locale)}
@@ -181,6 +181,12 @@ function Header (props) {
                 <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
                   <div className='icon-flag shadow-sm mr-3'><Flags.ES /></div>
                   {LocaleCode.getLanguageNativeName('es-ES')}
+                </a>
+              </Link>
+              <Link href={router.pathname} locale='de-DE'>
+                <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
+                  <div className='icon-flag shadow-sm mr-3'><Flags.DE /></div>
+                  {LocaleCode.getLanguageNativeName('de-DE')}
                 </a>
               </Link>
               <Link href={router.pathname} locale='zh-CN'>
