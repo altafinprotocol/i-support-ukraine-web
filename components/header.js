@@ -189,6 +189,12 @@ function Header (props) {
                   {LocaleCode.getLanguageNativeName('de-DE')}
                 </a>
               </Link>
+              <Link href={router.pathname} locale='it-IT'>
+                <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
+                  <div className='icon-flag shadow-sm mr-3'><Flags.IT /></div>
+                  {LocaleCode.getLanguageNativeName('it-IT')}
+                </a>
+              </Link>
               <Link href={router.pathname} locale='zh-CN'>
                 <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
                   <div className='icon-flag shadow-sm mr-3'><Flags.CN /></div>

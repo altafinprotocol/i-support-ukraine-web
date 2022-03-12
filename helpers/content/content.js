@@ -38,6 +38,45 @@ export const content = `{
         "textLink": "Join our Discord"
       }
     },
+    "it-IT": {
+      "notSupported": {
+        "meta": {
+          "title": "Supporto Ucraina verificato NFT",
+          "description": "Mostra all'Ucraina, alla Russia e al mondo che sei al fianco dell'Ucraina con questa donazione verificata NFT",
+          "image": "https://isupportukraine.xyz/isupportukraine-meta.jpg",
+          "video": ""
+        },
+        "content": {
+          "title": "Non supportato",
+          "subTitle": "Reti attualmente supportate"
+        }
+      },
+      "mint": {
+        "meta": {
+          "title": "Supporto Ucraina verificato NFT",
+          "description": "Mostra all'Ucraina, alla Russia e al mondo che sei al fianco dell'Ucraina con questa donazione verificata NFT",
+          "image": "https://isupportukraine.xyz//isupportukraine-meta.jpg",
+          "video": ""
+        },
+        "content": {
+          "cardTitle": "Sostengo l'Ucraina",
+          "cardSubTitle": "Mostra all'Ucraina, alla Russia e al mondo che sei dalla parte dell'Ucraina",
+          "cardBody": "Se hai donato direttamente al portafoglio ufficiale dell'Ucraina, puoi coniare questa donazione verificata “I Support Ukraine“ NFT. Dopo, imposta come immagine del tuo profilo Twitter per mostrare all'esercito russo che siamo con l'Ucraina.",
+          "cardBodySuccess": "Grazie per aver sostenuto l'Ucraina. Imposta la tua donazione verificata “I Support Ukraine“ NFT come immagine del tuo profilo Twitter per aiutare a costruire un movimento.",
+          "cardBodyOpenSea": "Visualizza la raccolta su OpenSea",
+          "ethBalance": "Equilibrio di Ethereum",
+          "buttonMenuMint": "Menta",
+          "buttonConnectWallet": "Collega il portafoglio",
+          "buttonMint": "Nuovo NFT",
+          "buttonDonate": "Dona & Menta",
+          "modalSelectWallet": "Seleziona Portafoglio"
+        }
+      },
+      "footer": {
+        "text": "Orgogliosamente costruito dagli AltaPunks all'Alta Finance Protocol",
+        "textLink": "Unisciti alla nostra discordia"
+      }
+    },
     "de-DE": {
       "notSupported": {
         "meta": {
