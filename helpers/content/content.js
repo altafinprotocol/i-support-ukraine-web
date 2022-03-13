@@ -38,6 +38,45 @@ export const content = `{
       "textLink": "Join our Discord"
     }
   },
+  "tr-TR": {
+    "notSupported": {
+      "meta": {
+        "title": "Ukrayna Onaylı NFT'yi Destekliyorum",
+        "description": "Bu Doğrulanmış Bağış NFT ile Ukrayna, Rusya ve Dünyaya Ukrayna'nın yanında olduğunuzu gösterin",
+        "image": "https://isupportukraine.xyz/isupportukraine-meta.jpg",
+        "video": ""
+      },
+      "content": {
+        "title": "Desteklenmiyor",
+        "subTitle": "Şu Anda Desteklenen Ağlar"
+      }
+    },
+    "mint": {
+      "meta": {
+        "title": "Ukrayna Onaylı NFT'yi Destekliyorum",
+        "description": "Bu Doğrulanmış Bağış NFT ile Ukrayna, Rusya ve Dünyaya Ukrayna'nın yanında olduğunuzu gösterin",
+        "image": "https://isupportukraine.xyz//isupportukraine-meta.jpg",
+        "video": ""
+      },
+      "content": {
+        "cardTitle": "Ukrayna'yı Destekliyorum",
+        "cardSubTitle": "Ukrayna, Rusya ve Dünyaya Ukrayna'nın yanında olduğunuzu gösterin",
+        "cardBody": "Doğrudan resmi Ukrayna cüzdanına bağış yaptıysanız, bu “Ukrayna'yı Destekliyorum” Onaylı Bağış NFT'sini basabilirsiniz. Ardından, Rus ordusuna Ukrayna'nın yanında olduğumuzu göstermek için lütfen Twitter profil resminizi ayarlayın.",
+        "cardBodySuccess": "Ukrayna'yı desteklediğiniz için teşekkür ederiz. Hareket oluşturmaya yardımcı olması için lütfen ”Ukrayna'yı Destekliyorum” Onaylı Bağış NFT'nizi Twitter profil resminiz olarak ayarlayın.",
+        "cardBodyOpenSea": "OpenSea'de Koleksiyonu Görüntüle",
+        "ethBalance": "Ethereum Bakiyesi",
+        "buttonMenuMint": "nane",
+        "buttonConnectWallet": "Cüzdanı Bağla",
+        "buttonMint": "Nane NFT",
+        "buttonDonate": "Bağış ve Nane",
+        "modalSelectWallet": "Cüzdan Seç"
+      }
+    },
+    "footer": {
+      "text": "Alta Finance Protocol'de AltaPunks tarafından gururla inşa edilmiştir",
+      "textLink": "Discordumuza Katılın"
+    }
+  },
   "pt-PT": {
     "notSupported": {
       "meta": {
