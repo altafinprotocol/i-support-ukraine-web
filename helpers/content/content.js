@@ -38,6 +38,123 @@ export const content = `{
       "textLink": "Join our Discord"
     }
   },
+  "ko-KR": {
+    "notSupported": {
+      "meta": {
+        "title": "私はウクライナの検証済みNFTをサポートします",
+        "description": "この確認済みの寄付NFTを使用して、ウクライナ、ロシア、およびウクライナのそばにいる世界を表示します",
+        "image": "https://isupportukraine.xyz/isupportukraine-meta.jpg",
+        "video": ""
+      },
+      "content": {
+        "title": "Not Supported",
+        "subTitle": "Networks Currently Supported"
+      }
+    },
+    "mint": {
+      "meta": {
+        "title": "私はウクライナの検証済みNFTをサポートします",
+        "description": "この確認済みの寄付NFTを使用して、ウクライナ、ロシア、およびウクライナのそばにいる世界を表示します",
+        "image": "https://isupportukraine.xyz//isupportukraine-meta.jpg",
+        "video": ""
+      },
+      "content": {
+        "cardTitle": "私はウクライナを支持します",
+        "cardSubTitle": "ウクライナ、ロシア、そしてあなたがウクライナのそばにいる世界を見せてください",
+        "cardBody": "ウクライナの公式ウォレットに直接寄付した場合は、この「ISupportUkraine」の確認済み寄付NFTを作成できます。 その後、私たちがウクライナと一緒に立っているロシア軍を示すためにあなたのツイッタープロフィール写真として設定してください。",
+        "cardBodySuccess": "ウクライナをサポートしていただきありがとうございます。 ムーブメントの構築に役立てるために、「ISupportUkraine」の確認済み寄付NFTをTwitterプロフィール写真として設定してください。",
+        "cardBodyOpenSea": "OpenSeaでコレクションを見る",
+        "ethBalance": "イーサリアムバランス",
+        "buttonMenuMint": "ミント",
+        "buttonConnectWallet": "ウォレットを接続する",
+        "buttonMint": "ミントNFT",
+        "buttonDonate": "寄付＆ミント",
+        "modalSelectWallet": "ウォレットを選択"
+      }
+    },
+    "footer": {
+      "text": "AltaFinanceProtocolのAltaPunksによって誇らしげに構築されました",
+      "textLink": "私たちの不和に参加する"
+    }
+  },
+  "ja-JP": {
+    "notSupported": {
+      "meta": {
+        "title": "私はウクライナの検証済みNFTをサポートします",
+        "description": "この確認済みの寄付NFTを使用して、ウクライナ、ロシア、およびウクライナのそばにいる世界を表示します",
+        "image": "https://isupportukraine.xyz/isupportukraine-meta.jpg",
+        "video": ""
+      },
+      "content": {
+        "title": "サポートされていません",
+        "subTitle": "現在サポートされているネットワーク"
+      }
+    },
+    "mint": {
+      "meta": {
+        "title": "私はウクライナの検証済みNFTをサポートします",
+        "description": "この確認済みの寄付NFTを使用して、ウクライナ、ロシア、およびウクライナのそばにいる世界を表示します",
+        "image": "https://isupportukraine.xyz//isupportukraine-meta.jpg",
+        "video": ""
+      },
+      "content": {
+        "cardTitle": "私はウクライナを支持します",
+        "cardSubTitle": "ウクライナ、ロシア、そしてあなたがウクライナのそばにいる世界を見せてください",
+        "cardBody": "ウクライナの公式ウォレットに直接寄付した場合は、この「ISupportUkraine」の確認済み寄付NFTを作成できます。 その後、私たちがウクライナと一緒に立っているロシア軍を示すためにあなたのツイッタープロフィール写真として設定してください。",
+        "cardBodySuccess": "ウクライナをサポートしていただきありがとうございます。 ムーブメントの構築に役立てるために、「ISupportUkraine」の確認済み寄付NFTをTwitterプロフィール写真として設定してください。",
+        "cardBodyOpenSea": "OpenSeaでコレクションを見る",
+        "ethBalance": "イーサリアムバランス",
+        "buttonMenuMint": "ミント",
+        "buttonConnectWallet": "ウォレットを接続する",
+        "buttonMint": "ミントNFT",
+        "buttonDonate": "寄付＆ミント",
+        "modalSelectWallet": "ウォレットを選択"
+      }
+    },
+    "footer": {
+      "text": "AltaFinanceProtocolのAltaPunksによって誇らしげに構築されました",
+      "textLink": "私たちの不和に参加する"
+    }
+  },
+  "el-GR": {
+    "notSupported": {
+      "meta": {
+        "title": "Υποστηρίζω την επαληθευμένη NFT της Ουκρανίας",
+        "description": "Δείξτε την Ουκρανία, τη Ρωσία και τον κόσμο ότι είστε στο πλευρό της Ουκρανίας με αυτήν την Επαληθευμένη Δωρεά NFT",
+        "image": "https://isupportukraine.xyz/isupportukraine-meta.jpg",
+        "video": ""
+      },
+      "content": {
+        "title": "Δεν υποστηρίζεται",
+        "subTitle": "Δίκτυα που υποστηρίζονται αυτήν τη στιγμή"
+      }
+    },
+    "mint": {
+      "meta": {
+        "title": "Υποστηρίζω την επαληθευμένη NFT της Ουκρανίας",
+        "description": "Δείξτε την Ουκρανία, τη Ρωσία και τον κόσμο ότι είστε στο πλευρό της Ουκρανίας με αυτήν την Επαληθευμένη Δωρεά NFT",
+        "image": "https://isupportukraine.xyz//isupportukraine-meta.jpg",
+        "video": ""
+      },
+      "content": {
+        "cardTitle": "Υποστηρίζω την Ουκρανία",
+        "cardSubTitle": "Δείξτε στην Ουκρανία, τη Ρωσία και τον κόσμο ότι στέκεστε στο πλευρό της Ουκρανίας",
+        "cardBody": "Εάν έχετε κάνει δωρεά απευθείας στο επίσημο πορτοφόλι της Ουκρανίας, μπορείτε να κόψετε αυτό το Επαληθευμένο NFT «Υποστηρίζω την Ουκρανία». Στη συνέχεια, ορίστε τη φωτογραφία του προφίλ σας στο Twitter για να δείξετε στον Ρώσο στρατό ότι είμαστε δίπλα στην Ουκρανία.",
+        "cardBodySuccess": "Σας ευχαριστούμε για τη στήριξη της Ουκρανίας. Ορίστε την επαληθευμένη δωρεά NFT «I Support Ukraine» ως εικόνα προφίλ στο Twitter για να συμβάλετε στη δημιουργία ενός κινήματος.",
+        "cardBodyOpenSea": "Δείτε τη συλλογή στο OpenSea",
+        "ethBalance": "Ισορροπία Ethereum",
+        "buttonMenuMint": "Μέντα",
+        "buttonConnectWallet": "Σύνδεση Πορτοφολιού",
+        "buttonMint": "Νομισματοκοπείο NFT",
+        "buttonDonate": "Δωρεά & Νομισματοκοπείοt",
+        "modalSelectWallet": "Επιλέξτε Πορτοφόλι"
+      }
+    },
+    "footer": {
+      "text": "Κατασκευάστηκε περήφανα από τους AltaPunks στο Alta Finance Protocol",
+      "textLink": "Εγγραφείτε στο Discord μας"
+    }
+  },
   "tr-TR": {
     "notSupported": {
       "meta": {

@@ -219,6 +219,24 @@ function Header (props) {
                   {LocaleCode.getLanguageNativeName('tr-TR')}
                 </a>
               </Link>
+              <Link href={router.pathname} locale='el-GR'>
+                <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
+                  <div className='icon-flag shadow-sm mr-3'><Flags.GR /></div>
+                  {LocaleCode.getLanguageNativeName('el-GR')}
+                </a>
+              </Link>
+              <Link href={router.pathname} locale='ja-JP'>
+                <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
+                  <div className='icon-flag shadow-sm mr-3'><Flags.JP /></div>
+                  {LocaleCode.getLanguageNativeName('ja-JP')}
+                </a>
+              </Link>
+              <Link href={router.pathname} locale='ko-KR'>
+                <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
+                  <div className='icon-flag shadow-sm mr-3'><Flags.KR /></div>
+                  {LocaleCode.getLanguageNativeName('ko-KR')}
+                </a>
+              </Link>
               <Link href={router.pathname} locale='zh-CN'>
                 <a className='dropdown-item d-flex align-items-center justify-content-start pl-3' onClick={() => setMobileActive(false)}>
                   <div className='icon-flag shadow-sm mr-3'><Flags.CN /></div>
