@@ -9,9 +9,6 @@
     "heroku-postbuild": "npm run build",
     "export": "next export"
   },
-  "engines": {
-    "node": "15.14.0"
-  },
   "dependencies": {
     "@alch/alchemy-web3": "^1.1.7",
     "@aws/web3-http-provider": "^1.0.1",
